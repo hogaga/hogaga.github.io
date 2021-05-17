@@ -1,0 +1,99 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(214, 214, 214);
+}
+html, body {
+height: 100%;
+margin: 0;
+}
+.wrapper {
+  min-height: calc(100% - 50px); /*減去footer高度*/
+}
+
+.bg-danger{
+  background: linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: -moz-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: -webkit-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: -o-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link,
+.btn-outline-success{
+  color: white;
+}
+
+.nav-link{
+  list-style-type: none;
+  float: left;   
+}
+.nav-link:hover{
+  color: tomato;
+}
+.nav-link::after{
+  content: "";/*讓after顯示出來*/
+  border-bottom: 2px solid #ffffff;
+  margin: auto;/*使線段從中間展開*/
+  position: relative/*調整位置*/;
+  width: 0%;
+  display: block;/*變成一個區塊才hover的到*/
+  transition: all .3s;
+  top:5px;
+}
+.nav-link:hover::after{/*hover要先寫*/
+  width: 100%;/*讓線段長出*/
+}
+
+
+.footer {
+  height: 120px; /*設定footer本身高度*/
+  background-color: rgb(54, 54, 54);
+}
+.footer .container{
+  width: 80%;
+  display: flex;
+  padding: 20px 0 10px 0;
+}
+.footer .container .language{
+  margin: auto;
+  display: flex;
+  
+}
+.footer .container .language p,a{
+  padding: 5px;
+  display: inline;
+  color: rgb(151, 151, 151);
+}
+.footer .container ul{
+  margin: auto;
+}
+.footer .container ul li{
+  display: inline;
+  position: relative;
+}
+.footer .container ul li:after{
+  content: "";
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 4px;
+  height: 4px;
+  background: #696969;
+  position: absolute;
+  top: 40%;
+  left: -5px;
+}
+.footer .container ul li:after li:nth-child(1){
+  background: #d8d8d8;
+}
+.footer .copyright{
+  display: flex;
+}
+.footer .copyright p{
+  margin: auto;
+  color: rgb(151, 151, 151);
+}

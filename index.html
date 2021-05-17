@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet">
+  <style>
+    a{
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(214, 214, 214);
+}
+html, body {
+height: 100%;
+margin: 0;
+}
+.wrapper {
+  min-height: calc(100% - 50px); /*減去footer高度*/
+}
+
+.bg-danger{
+  background: linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: -moz-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: -webkit-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: -o-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link,
+.btn-outline-success{
+  color: white;
+}
+
+.nav-link{
+  list-style-type: none;
+  float: left;   
+}
+.nav-link:hover{
+  color: tomato;
+}
+.nav-link::after{
+  content: "";/*讓after顯示出來*/
+  border-bottom: 2px solid #ffffff;
+  margin: auto;/*使線段從中間展開*/
+  position: relative/*調整位置*/;
+  width: 0%;
+  display: block;/*變成一個區塊才hover的到*/
+  transition: all .3s;
+  top:5px;
+}
+.nav-link:hover::after{/*hover要先寫*/
+  width: 100%;/*讓線段長出*/
+}
+
+
+.footer {
+  height: 120px; /*設定footer本身高度*/
+  background-color: rgb(54, 54, 54);
+}
+.footer .container{
+  width: 80%;
+  display: flex;
+  padding: 20px 0 10px 0;
+}
+.footer .container .language{
+  margin: auto;
+  display: flex;
+  
+}
+.footer .container .language p,a{
+  padding: 5px;
+  display: inline;
+  color: rgb(151, 151, 151);
+}
+.footer .container ul{
+  margin: auto;
+}
+.footer .container ul li{
+  display: inline;
+  position: relative;
+}
+.footer .container ul li:after{
+  content: "";
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 4px;
+  height: 4px;
+  background: #696969;
+  position: absolute;
+  top: 40%;
+  left: -5px;
+}
+.footer .container ul li:after li:nth-child(1){
+  background: #d8d8d8;
+}
+.footer .copyright{
+  display: flex;
+}
+.footer .copyright p{
+  margin: auto;
+  color: rgb(151, 151, 151);
+}
+
+  </style>
+</head>
+
+
+
+
+<body>
+
+
+  <div class="wrapper">
+    <div class="content">
+
+
+      <!-- navbar -->
+      <header class='header'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">RTIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">我的票卷</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">探索活動</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">搜尋活動</a>
+                </li>
+                <li class="nav-item">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="搜尋活動" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">建立活動</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    選擇組織
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">組織列表</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">登入</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">登出</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> 
+      </header>
+      <!-- navbar -->
+  
+
+
+
+
+        內容區塊
+      
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  
+    </div>
+  </div>
+ 
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="language">
+        <p>Language</p>
+        <a href="" style="color: rgb(240, 240, 240);">繁體中文</a>
+        <a href="">English</a>
+        <a href="">日本語</a>
+      </div>
+      <ul>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">定價方式</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">訂票流程說明</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">服務條款</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">隱私權政</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">聯絡我們</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">加入我們</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">常見問題</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p>© 2014 - 2021 RTIX 網路娛樂股份有限公司  RTIX ENTERTAINMENT LIMITED</p>
+    </div>
+
+  </footer>
+  <!-- footer -->
+</body>
+</html>
