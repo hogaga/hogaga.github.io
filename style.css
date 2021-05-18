@@ -33,6 +33,19 @@ html, body {
   float: left;   
 }
 
+.d-flex{
+  position: relative;
+}
+.form-control{
+    padding: .375rem 1.5rem;
+}
+.magnifier{
+  position: absolute;
+  top: .8rem;
+  left: .3rem;
+}
+
+
 .nav-link::after{
   content: "";/*讓after顯示出來*/
   border-bottom: 2px solid #ffffff;
