@@ -6,32 +6,33 @@ a:hover {
   color: rgb(214, 214, 214);
 }
 html, body {
-height: 100%;
-margin: 0;
+  height: 100%;
+  margin: 0;
 }
 .wrapper {
   min-height: calc(100% - 50px); /*減去footer高度*/
 }
 
 .bg-danger{
-  background: linear-gradient(0deg, #DE0000 9%, #A60000 48%);
-  background: -moz-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
-  background: -webkit-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
-  background: -o-linear-gradient(0deg, #DE0000 9%, #A60000 48%);
+  background: linear-gradient(0deg, #EB0000 0%, #AB0000 56%);
+  background: -moz-linear-gradient(0deg, #EB0000 0%, #AB0000 56%);
+  background: -webkit-linear-gradient(0deg, #EB0000 0%, #AB0000 56%);
+  background: -o-linear-gradient(0deg, #EB0000 0%, #AB0000 56%);
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .nav-link,
 .btn-outline-success{
   color: white;
 }
+.navbar-nav .dropdown-menu{
+  left: -20px;
+}
 
 .nav-link{
   list-style-type: none;
   float: left;   
 }
-.nav-link:hover{
-  color: tomato;
-}
+
 .nav-link::after{
   content: "";/*讓after顯示出來*/
   border-bottom: 2px solid #ffffff;
@@ -54,11 +55,10 @@ margin: 0;
 .footer .container{
   width: 80%;
   display: flex;
-  padding: 20px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 .footer .container .language{
   margin: auto;
-  display: flex;
   
 }
 .footer .container .language p,a{
@@ -82,7 +82,7 @@ margin: 0;
   border-radius: 2px;
   width: 4px;
   height: 4px;
-  background: #696969;
+  background: #4e4e4e;
   position: absolute;
   top: 40%;
   left: -5px;
@@ -96,4 +96,9 @@ margin: 0;
 .footer .copyright p{
   margin: auto;
   color: rgb(151, 151, 151);
+}
+.logo{
+  font-family: bungee,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
