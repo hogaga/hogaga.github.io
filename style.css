@@ -62,8 +62,9 @@ html, body {
 
 
 .footer {
-  height: 120px; /*設定footer本身高度*/
+  /* height: 120px; 設定footer本身高度 */
   background-color: rgb(54, 54, 54);
+  padding-bottom: 20px;
 }
 .footer .container{
   width: 80%;
@@ -72,12 +73,15 @@ html, body {
 }
 .footer .container .language{
   margin: auto;
-  
 }
 .footer .container .language p,a{
   padding: 5px;
   display: inline;
   color: rgb(151, 151, 151);
+}
+.footer .container .language a:nth-child(2){
+  border-bottom: 2px solid #EB0000;
+  color: #d8d8d8;
 }
 .footer .container ul{
   margin: auto;
@@ -86,7 +90,7 @@ html, body {
   display: inline;
   position: relative;
 }
-.footer .container ul li:after{
+.footer .container ul li+li:after{
   content: "";
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -95,7 +99,7 @@ html, body {
   border-radius: 2px;
   width: 4px;
   height: 4px;
-  background: #4e4e4e;
+  background: #5e5d5d;
   position: absolute;
   top: 40%;
   left: -5px;
@@ -109,6 +113,7 @@ html, body {
 .footer .copyright p{
   margin: auto;
   color: rgb(151, 151, 151);
+  padding: 0 10%;
 }
 .logo{
   font-family: bungee,sans-serif;
