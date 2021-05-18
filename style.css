@@ -37,7 +37,7 @@ html, body {
   position: relative;
 }
 .form-control{
-    padding: .375rem 1.5rem;
+    padding: .375rem .75rem .375rem 1.5rem;
 }
 .magnifier{
   position: absolute;
