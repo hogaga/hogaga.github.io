@@ -2,9 +2,7 @@ a{
   text-decoration: none;
   color: black;
 }
-a:hover {
-  color: rgb(214, 214, 214);
-}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -65,6 +63,18 @@ html, body {
 
 
 
+.slide .carousel-indicators [data-bs-target]{
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+
+
+
+
 /* category */
 
 /* 刪除預設欄位空白 */
@@ -84,9 +94,14 @@ html, body {
 .category .fas {
   display: block;
 }
-.category .learn:hover{
+.category .learn a:hover{
   color:red ;
 }
+.category .container{
+  padding-right: var(--bs-gutter-x, 0rem);
+  padding-left: var(--bs-gutter-x, 0rem);
+}
+
 
 
 .footer {
@@ -146,7 +161,7 @@ html, body {
 }
 .footer .container ul li a{
   color: rgb(151, 151, 151);
-  padding: 3px;
+  padding: 5px;
 }
 .footer .container ul li a:hover{
   color: white;
