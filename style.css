@@ -103,7 +103,7 @@ html, body {
 }
 .category a{
   color:rgb(56, 56, 56) ;
-  -webkit-transition: .3s;
+  transition: .3s;
 }
 .category .learn a:hover{
   color:rgb(20, 47, 167) ;
