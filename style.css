@@ -6,6 +6,8 @@ a{
 html, body {
   height: 100%;
   margin: 0;
+  line-height: 24px;
+  font-size: 15px;
 }
 .wrapper {
   min-height: calc(100% - 50px); /*減去footer高度*/
@@ -86,9 +88,7 @@ html, body {
 
 
 /* category */
-
 /* 刪除預設欄位空白 */
-
 .category .g-lg-3, .gx-lg-3 {
   --bs-gutter-x: 0rem;
 }
@@ -136,16 +136,31 @@ html, body {
 
 
 
+
+
+
+
+
+
+.news .title .accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+.news .accordion-button:not(.collapsed)::after {
+  border-color: none;
+}
+
 .news .accordion-button:not(.collapsed) {
   color: #b10000;
-  background-color:none;
+  background-color: #ffffff;
 } 
 
 .news .accordion-button:focus {
   z-index: 3;
-  border-color: #b10000;
+  border-color: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(121, 34, 13 / 3%);
+  box-shadow: none;
+  background-color: #f8f9fa;
 }
 
 
