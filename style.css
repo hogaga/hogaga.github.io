@@ -63,6 +63,10 @@ html, body {
 
 
 
+
+
+
+
 .slide .carousel-indicators [data-bs-target]{
   width: 16px;
   height: 16px;
@@ -102,11 +106,11 @@ html, body {
   line-height: 4rem;
 }
 .category a{
-  color:rgb(56, 56, 56) ;
+  color:rgb(54, 54, 54);
   transition: .3s;
 }
 .category .learn a:hover{
-  color:rgb(20, 47, 167) ;
+  color:rgb(121, 34, 13) ;
 }
 .category .music a:hover{
   color:rgb(235, 157, 14) ;
@@ -115,10 +119,10 @@ html, body {
   color:rgb(141, 0, 177) ;
 }
 .category .heart a:hover{
-  color:rgb(255, 77, 240) ;
+  color:rgb(253, 29, 96) ;
 }
 .category .food a:hover{
-  color:rgb(30, 191, 255) ;
+  color:rgb(35, 153, 199) ;
 }
 .category .outdoor a:hover{
   color:rgb(83, 167, 27) ;
@@ -128,6 +132,24 @@ html, body {
   padding-right: var(--bs-gutter-x, 0rem);
   padding-left: var(--bs-gutter-x, 0rem);
 }
+
+
+
+
+.news .accordion-button:not(.collapsed) {
+  color: #b10000;
+  background-color:none;
+} 
+
+.news .accordion-button:focus {
+  z-index: 3;
+  border-color: #b10000;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(121, 34, 13 / 3%);
+}
+
+
+
 
 
 
