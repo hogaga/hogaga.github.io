@@ -84,7 +84,9 @@ html, body {
 .category .fas {
   display: block;
 }
-
+.category .learn:hover{
+  color:red ;
+}
 
 
 .footer {
@@ -100,11 +102,20 @@ html, body {
 .footer .container .language{
   margin: auto;
 }
-.footer .container .language p,a{
+.footer .container .language p{
+  padding: 5px;
+  display: inline;
+  color:rgb(151, 151, 151);
+} 
+.footer .container .language a{
   padding: 5px;
   display: inline;
   color: rgb(151, 151, 151);
 }
+.footer .container .language a:hover{
+  color: white;
+}
+
 .footer .container .language a:nth-child(2){
   border-bottom: 2px solid #EB0000;
   color: #d8d8d8;
@@ -125,7 +136,7 @@ html, body {
   border-radius: 2px;
   width: 4px;
   height: 4px;
-  background: #5e5d5d;
+  background: #202020;
   position: absolute;
   top: 40%;
   left: -5px;
@@ -133,6 +144,20 @@ html, body {
 .footer .container ul li:after li:nth-child(1){
   background: #d8d8d8;
 }
+.footer .container ul li a{
+  color: rgb(151, 151, 151);
+  padding: 3px;
+}
+.footer .container ul li a:hover{
+  color: white;
+}
+
+
+
+
+
+
+
 .footer .copyright{
   display: flex;
 }
