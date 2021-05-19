@@ -71,6 +71,12 @@ html, body {
   border-radius: 50%;
 }
 
+.slide .carousel-control-next-icon, 
+.carousel-control-prev-icon{
+  width: 3rem;
+  height: 3rem;
+}
+
 
 
 
@@ -93,10 +99,31 @@ html, body {
 .category .fa, 
 .category .fas {
   display: block;
+  line-height: 4rem;
+}
+.category a{
+  color:rgb(56, 56, 56) ;
+  -webkit-transition: .3s;
 }
 .category .learn a:hover{
-  color:red ;
+  color:rgb(20, 47, 167) ;
 }
+.category .music a:hover{
+  color:rgb(235, 157, 14) ;
+}
+.category .museum a:hover{
+  color:rgb(141, 0, 177) ;
+}
+.category .heart a:hover{
+  color:rgb(219, 13, 13) ;
+}
+.category .food a:hover{
+  color:rgb(119, 119, 119) ;
+}
+.category .outdoor a:hover{
+  color:rgb(83, 167, 27) ;
+}
+
 .category .container{
   padding-right: var(--bs-gutter-x, 0rem);
   padding-left: var(--bs-gutter-x, 0rem);
