@@ -10,7 +10,7 @@ html, body {
   font-size: 15px;
 }
 .wrapper {
-  min-height: calc(100% - 50px); /*減去footer高度*/
+  min-height: calc(100% - 100px); /*減去footer高度*/
 }
 
 .header .bg-danger{
@@ -162,6 +162,7 @@ html, body {
   box-shadow: none;
   background-color: #f8f9fa;
 }
+
 
 
 
