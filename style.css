@@ -197,7 +197,9 @@ html, body {
   width: 100%;
 }
 
-
+.calender .nav-tabs{
+  margin-bottom: 20px;
+}
 
 
 
