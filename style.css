@@ -190,6 +190,9 @@ html, body {
   color: #b10000;
   width: 100%;
 }
+.calender .nav-link:hover{
+  background-color: #f8f9fa;
+}
 
 .calender .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #ffffff;
