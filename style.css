@@ -100,8 +100,7 @@ html, body {
   padding: 1rem;
   text-align: center;
 }
-.category .fa, 
-.category .fas {
+.category .fa,.category .fas {
   display: block;
   line-height: 4rem;
 }
@@ -109,6 +108,7 @@ html, body {
   color:rgb(54, 54, 54);
   transition: .3s;
 }
+
 .category .learn a:hover{
   color:rgb(121, 34, 13) ;
 }
@@ -163,6 +163,18 @@ html, body {
   background-color: #f8f9fa;
 }
 
+.news .accordion-button{
+  position: relative;
+}
+
+.news .exclamation{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  color: #9c9c9c;
+  background-image: url('src="https://t.kfs.io/assets/icon-exclamation-c6f8549f536a0920dc5a8ef972eeea20.svg" ');
+}
 
 
 
@@ -210,9 +222,11 @@ html, body {
   height: 100%;
   display:flex;
 }
+
 .calender a h2{
   margin: auto;
   color: white;
+  text-shadow:rgba(0, 0, 0, 0.514) 1px 0 2px;
   padding: 40px;
   font-size: 18px;
   font-weight: 400;
@@ -241,12 +255,13 @@ html, body {
     height: 60%;
     background-color: rgba(0, 0, 0, 0);
     transition: height .3s 0s,
-              width 0s 0s;
+                width 0s 0s;
+   /* transition: 屬性 動畫時間 延遲執行時間; */
   }
   .calender a h2:hover{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.541);
   }
 
 }
@@ -286,7 +301,7 @@ html, body {
 }
 
 .footer .container .language a:nth-child(2){
-  border-bottom: 2px solid #EB0000;
+  border-bottom: 1px solid #b10000;
   color: #d8d8d8;
 }
 .footer .container ul{
